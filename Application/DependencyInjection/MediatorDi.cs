@@ -1,5 +1,5 @@
 ﻿using System.Reflection;
-using Application.Behavior;
+using Application.Behaviors;
 using Application.Commands;
 using Application.Validators;
 using FluentValidation;

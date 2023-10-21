@@ -1,4 +1,4 @@
-using Application.Behavior;
+using Application.Behaviors;
 using Application.Commands;
 using Domain.Dtos;
 using Domain.Exceptions;

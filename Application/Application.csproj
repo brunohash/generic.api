@@ -20,13 +20,13 @@
     <None Remove="Commands\" />
     <None Remove="Handlers\" />
     <None Remove="Validators\" />
-    <None Remove="Behavior\" />
+    <None Remove="Behaviors\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DependencyInjection\" />
     <Folder Include="Commands\" />
     <Folder Include="Handlers\" />
     <Folder Include="Validators\" />
-    <Folder Include="Behavior\" />
+    <Folder Include="Behaviors\" />
   </ItemGroup>
 </Project>
