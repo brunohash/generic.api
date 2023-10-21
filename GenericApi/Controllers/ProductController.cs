@@ -1,8 +1,8 @@
-using Application.Behaviors;
 using Application.Commands;
-using Domain.Dtos;
+using Application.Dtos;
 using Domain.Exceptions;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace GenericApi.Controllers;
@@ -11,6 +11,7 @@ namespace GenericApi.Controllers;
 [Route("[controller]")]
 public class ProductController : ControllerBase
 {
+    [Authorize]
     [HttpPost(Name = "createProducts")]
     public async Task<IActionResult> Post([FromBody] CreateProductCommand command, [FromServices] IMediator _mediator)
     {

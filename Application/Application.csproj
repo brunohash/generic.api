@@ -21,6 +21,8 @@
     <None Remove="Handlers\" />
     <None Remove="Validators\" />
     <None Remove="Behaviors\" />
+    <None Remove="Factory\" />
+    <None Remove="Dtos\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DependencyInjection\" />
@@ -28,5 +30,7 @@
     <Folder Include="Handlers\" />
     <Folder Include="Validators\" />
     <Folder Include="Behaviors\" />
+    <Folder Include="Factory\" />
+    <Folder Include="Dtos\" />
   </ItemGroup>
 </Project>

@@ -1,5 +1,5 @@
 ﻿using MediatR;
-using Domain.Dtos;
+using Application.Dtos;
 
 namespace Application.Commands
 {

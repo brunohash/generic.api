@@ -1,0 +1,669 @@
+2023-10-21 14:52:42.906 -04:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-10-21 14:52:42.954 -04:00 [DBG] Hosting starting
+2023-10-21 14:52:43.429 -04:00 [INF] Now listening on: https://localhost:7180
+2023-10-21 14:52:43.430 -04:00 [INF] Now listening on: http://localhost:5059
+2023-10-21 14:52:43.430 -04:00 [DBG] Loaded hosting startup assembly GenericApi
+2023-10-21 14:52:43.431 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-21 14:52:43.431 -04:00 [INF] Hosting environment: Development
+2023-10-21 14:52:43.431 -04:00 [INF] Content root path: /Users/brunohashimoto/Projects/GenericApi/GenericApi
+2023-10-21 14:52:43.431 -04:00 [DBG] Hosting started
+2023-10-21 14:52:43.484 -04:00 [DBG] Connection id "0HMUICRKAEU6B" accepted.
+2023-10-21 14:52:43.485 -04:00 [DBG] Connection id "0HMUICRKAEU6B" started.
+2023-10-21 14:52:44.484 -04:00 [DBG] Connection id "0HMUICRKAEU6B" received FIN.
+2023-10-21 14:52:44.495 -04:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-10-21 14:52:44.520 -04:00 [DBG] Connection id "0HMUICRKAEU6B" stopped.
+2023-10-21 14:52:44.523 -04:00 [DBG] Connection id "0HMUICRKAEU6B" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-10-21 14:52:44.669 -04:00 [DBG] Connection id "0HMUICRKAEU6C" accepted.
+2023-10-21 14:52:44.669 -04:00 [DBG] Connection id "0HMUICRKAEU6C" started.
+2023-10-21 14:52:44.672 -04:00 [DBG] Connection id "0HMUICRKAEU6D" accepted.
+2023-10-21 14:52:44.682 -04:00 [DBG] Connection id "0HMUICRKAEU6D" started.
+2023-10-21 14:52:44.782 -04:00 [DBG] Connection 0HMUICRKAEU6D established using the following protocol: "Tls12"
+2023-10-21 14:52:44.782 -04:00 [DBG] Connection 0HMUICRKAEU6C established using the following protocol: "Tls12"
+2023-10-21 14:52:44.808 -04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7180/swagger/index.html - -
+2023-10-21 14:52:44.809 -04:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-10-21 14:52:44.821 -04:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2023-10-21 14:52:44.822 -04:00 [DBG] Request did not match any endpoints
+2023-10-21 14:52:44.888 -04:00 [DBG] Connection id "0HMUICRKAEU6C" completed keep alive response.
+2023-10-21 14:52:44.890 -04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7180/swagger/index.html - - - 200 - text/html;charset=utf-8 81.5060ms
+2023-10-21 14:52:45.347 -04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7180/swagger/v1/swagger.json - -
+2023-10-21 14:52:45.347 -04:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2023-10-21 14:52:45.347 -04:00 [DBG] Request did not match any endpoints
+2023-10-21 14:52:45.393 -04:00 [DBG] Connection id "0HMUICRKAEU6C" completed keep alive response.
+2023-10-21 14:52:45.393 -04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7180/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 46.2017ms
+2023-10-21 14:52:48.984 -04:00 [INF] Request starting HTTP/1.1 POST https://localhost:7180/Product application/json 49
+2023-10-21 14:52:48.988 -04:00 [DBG] 1 candidate(s) found for the request path '/Product'
+2023-10-21 14:52:48.991 -04:00 [DBG] Endpoint 'GenericApi.Controllers.ProductController.Post (GenericApi)' with route pattern 'Product' is valid for the request path '/Product'
+2023-10-21 14:52:48.992 -04:00 [DBG] Request matched endpoint 'GenericApi.Controllers.ProductController.Post (GenericApi)'
+2023-10-21 14:52:48.994 -04:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-10-21 14:52:48.997 -04:00 [INF] Executing endpoint 'GenericApi.Controllers.ProductController.Post (GenericApi)'
+2023-10-21 14:52:49.023 -04:00 [INF] Route matched with {action = "Post", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Application.Commands.CreateProductCommand, MediatR.IMediator) on controller GenericApi.Controllers.ProductController (GenericApi).
+2023-10-21 14:52:49.023 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-10-21 14:52:49.023 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-10-21 14:52:49.024 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-10-21 14:52:49.024 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-10-21 14:52:49.024 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-10-21 14:52:49.025 -04:00 [DBG] Executing controller factory for controller GenericApi.Controllers.ProductController (GenericApi)
+2023-10-21 14:52:49.025 -04:00 [DBG] Executed controller factory for controller GenericApi.Controllers.ProductController (GenericApi)
+2023-10-21 14:52:49.027 -04:00 [DBG] Attempting to bind parameter 'command' of type 'Application.Commands.CreateProductCommand' ...
+2023-10-21 14:52:49.028 -04:00 [DBG] Attempting to bind parameter 'command' of type 'Application.Commands.CreateProductCommand' using the name '' in request data ...
+2023-10-21 14:52:49.028 -04:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2023-10-21 14:52:49.033 -04:00 [DBG] Connection id "0HMUICRKAEU6C", Request id "0HMUICRKAEU6C:00000003": started reading request body.
+2023-10-21 14:52:49.033 -04:00 [DBG] Connection id "0HMUICRKAEU6C", Request id "0HMUICRKAEU6C:00000003": done reading request body.
+2023-10-21 14:52:49.035 -04:00 [DBG] JSON input formatter succeeded, deserializing to type 'Application.Commands.CreateProductCommand'
+2023-10-21 14:52:49.036 -04:00 [DBG] Done attempting to bind parameter 'command' of type 'Application.Commands.CreateProductCommand'.
+2023-10-21 14:52:49.036 -04:00 [DBG] Done attempting to bind parameter 'command' of type 'Application.Commands.CreateProductCommand'.
+2023-10-21 14:52:49.036 -04:00 [DBG] Attempting to validate the bound parameter 'command' of type 'Application.Commands.CreateProductCommand' ...
+2023-10-21 14:52:49.040 -04:00 [DBG] Done attempting to validate the bound parameter 'command' of type 'Application.Commands.CreateProductCommand'.
+2023-10-21 14:52:49.041 -04:00 [DBG] Attempting to bind parameter '_mediator' of type 'MediatR.IMediator' ...
+2023-10-21 14:52:49.041 -04:00 [DBG] Done attempting to bind parameter '_mediator' of type 'MediatR.IMediator'.
+2023-10-21 14:52:49.041 -04:00 [DBG] Attempting to validate the bound parameter '_mediator' of type 'MediatR.IMediator' ...
+2023-10-21 14:52:49.042 -04:00 [DBG] Done attempting to validate the bound parameter '_mediator' of type 'MediatR.IMediator'.
+2023-10-21 14:52:49.147 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2023-10-21 14:52:49.147 -04:00 [DBG] No information found on request to perform content negotiation.
+2023-10-21 14:52:49.147 -04:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-10-21 14:52:49.147 -04:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-10-21 14:52:49.148 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-10-21 14:52:49.148 -04:00 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType0`5[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-10-21 14:52:49.152 -04:00 [INF] Executed action GenericApi.Controllers.ProductController.Post (GenericApi) in 126.5976ms
+2023-10-21 14:52:49.152 -04:00 [INF] Executed endpoint 'GenericApi.Controllers.ProductController.Post (GenericApi)'
+2023-10-21 14:52:49.152 -04:00 [DBG] Connection id "0HMUICRKAEU6C" completed keep alive response.
+2023-10-21 14:52:49.152 -04:00 [INF] Request finished HTTP/1.1 POST https://localhost:7180/Product application/json 49 - 400 - application/json;+charset=utf-8 167.7902ms
+2023-10-21 14:52:49.669 -04:00 [DBG] Connection id "0HMUICRKAEU6D" received FIN.
+2023-10-21 14:52:49.669 -04:00 [DBG] Connection id "0HMUICRKAEU6C" received FIN.
+2023-10-21 14:52:49.670 -04:00 [DBG] Connection id "0HMUICRKAEU6D" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-10-21 14:52:49.671 -04:00 [DBG] Connection id "0HMUICRKAEU6D" disconnecting.
+2023-10-21 14:52:49.671 -04:00 [DBG] Connection id "0HMUICRKAEU6C" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-10-21 14:52:49.671 -04:00 [DBG] Connection id "0HMUICRKAEU6C" disconnecting.
+2023-10-21 14:52:49.673 -04:00 [DBG] Connection id "0HMUICRKAEU6C" stopped.
+2023-10-21 14:52:49.673 -04:00 [DBG] Connection id "0HMUICRKAEU6D" stopped.
+2023-10-21 15:00:23.910 -04:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-10-21 15:00:23.975 -04:00 [DBG] Hosting starting
+2023-10-21 15:00:23.988 -04:00 [INF] User profile is available. Using '/Users/brunohashimoto/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-10-21 15:00:23.991 -04:00 [DBG] Reading data from file '/Users/brunohashimoto/.aspnet/DataProtection-Keys/key-4a804253-0c3b-4398-b81e-f5306380f3ea.xml'.
+2023-10-21 15:00:23.994 -04:00 [DBG] Reading data from file '/Users/brunohashimoto/.aspnet/DataProtection-Keys/key-48a325e2-4a5d-43ef-a463-95a0855766b0.xml'.
+2023-10-21 15:00:23.995 -04:00 [DBG] Reading data from file '/Users/brunohashimoto/.aspnet/DataProtection-Keys/key-d09f4f17-e35f-497a-95d6-f9538db6be82.xml'.
+2023-10-21 15:00:23.995 -04:00 [DBG] Reading data from file '/Users/brunohashimoto/.aspnet/DataProtection-Keys/key-0a9fc022-248d-411b-9442-abf5f0f06753.xml'.
+2023-10-21 15:00:23.997 -04:00 [DBG] Found key {4a804253-0c3b-4398-b81e-f5306380f3ea}.
+2023-10-21 15:00:23.999 -04:00 [DBG] Found key {48a325e2-4a5d-43ef-a463-95a0855766b0}.
+2023-10-21 15:00:23.999 -04:00 [DBG] Found key {d09f4f17-e35f-497a-95d6-f9538db6be82}.
+2023-10-21 15:00:23.999 -04:00 [DBG] Found key {0a9fc022-248d-411b-9442-abf5f0f06753}.
+2023-10-21 15:00:24.001 -04:00 [DBG] Considering key {d09f4f17-e35f-497a-95d6-f9538db6be82} with expiration date 2024-01-14 02:18:34Z as default key.
+2023-10-21 15:00:24.001 -04:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-10-21 15:00:24.008 -04:00 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2023-10-21 15:00:24.008 -04:00 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2023-10-21 15:00:24.010 -04:00 [DBG] Using key {d09f4f17-e35f-497a-95d6-f9538db6be82} as the default key.
+2023-10-21 15:00:24.010 -04:00 [DBG] Key ring with default key {d09f4f17-e35f-497a-95d6-f9538db6be82} was loaded during application startup.
+2023-10-21 15:00:24.317 -04:00 [INF] Now listening on: https://localhost:7180
+2023-10-21 15:00:24.318 -04:00 [INF] Now listening on: http://localhost:5059
+2023-10-21 15:00:24.318 -04:00 [DBG] Loaded hosting startup assembly GenericApi
+2023-10-21 15:00:24.318 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-21 15:00:24.318 -04:00 [INF] Hosting environment: Development
+2023-10-21 15:00:24.318 -04:00 [INF] Content root path: /Users/brunohashimoto/Projects/GenericApi/GenericApi
+2023-10-21 15:00:24.318 -04:00 [DBG] Hosting started
+2023-10-21 15:00:24.353 -04:00 [DBG] Connection id "0HMUICVTLKR8B" accepted.
+2023-10-21 15:00:24.353 -04:00 [DBG] Connection id "0HMUICVTLKR8B" started.
+2023-10-21 15:00:25.353 -04:00 [DBG] Connection id "0HMUICVTLKR8B" received FIN.
+2023-10-21 15:00:25.364 -04:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-10-21 15:00:25.406 -04:00 [DBG] Connection id "0HMUICVTLKR8B" stopped.
+2023-10-21 15:00:25.410 -04:00 [DBG] Connection id "0HMUICVTLKR8B" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-10-21 15:00:25.442 -04:00 [DBG] Connection id "0HMUICVTLKR8C" accepted.
+2023-10-21 15:00:25.442 -04:00 [DBG] Connection id "0HMUICVTLKR8C" started.
+2023-10-21 15:00:25.444 -04:00 [DBG] Connection id "0HMUICVTLKR8D" accepted.
+2023-10-21 15:00:25.445 -04:00 [DBG] Connection id "0HMUICVTLKR8D" started.
+2023-10-21 15:00:25.531 -04:00 [DBG] Connection 0HMUICVTLKR8C established using the following protocol: "Tls12"
+2023-10-21 15:00:25.551 -04:00 [DBG] Connection 0HMUICVTLKR8D established using the following protocol: "Tls12"
+2023-10-21 15:00:25.564 -04:00 [DBG] Connection id "0HMUICVTLKR8D" received FIN.
+2023-10-21 15:00:25.564 -04:00 [DBG] Connection id "0HMUICVTLKR8D" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-10-21 15:00:25.564 -04:00 [DBG] Connection id "0HMUICVTLKR8D" disconnecting.
+2023-10-21 15:00:25.567 -04:00 [DBG] Connection id "0HMUICVTLKR8D" stopped.
+2023-10-21 15:00:25.569 -04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7180/swagger/index.html - -
+2023-10-21 15:00:25.570 -04:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-10-21 15:00:25.594 -04:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2023-10-21 15:00:25.595 -04:00 [DBG] Request did not match any endpoints
+2023-10-21 15:00:25.653 -04:00 [DBG] Connection id "0HMUICVTLKR8C" completed keep alive response.
+2023-10-21 15:00:25.654 -04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7180/swagger/index.html - - - 200 - text/html;charset=utf-8 87.0579ms
+2023-10-21 15:00:26.043 -04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7180/swagger/v1/swagger.json - -
+2023-10-21 15:00:26.044 -04:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2023-10-21 15:00:26.044 -04:00 [DBG] Request did not match any endpoints
+2023-10-21 15:00:26.092 -04:00 [DBG] Connection id "0HMUICVTLKR8C" completed keep alive response.
+2023-10-21 15:00:26.093 -04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7180/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 49.4170ms
+2023-10-21 15:00:30.568 -04:00 [DBG] Connection id "0HMUICVTLKR8C" received FIN.
+2023-10-21 15:00:30.569 -04:00 [DBG] Connection id "0HMUICVTLKR8C" disconnecting.
+2023-10-21 15:00:30.569 -04:00 [DBG] Connection id "0HMUICVTLKR8C" stopped.
+2023-10-21 15:00:30.570 -04:00 [DBG] Connection id "0HMUICVTLKR8C" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-10-21 15:00:30.592 -04:00 [DBG] Connection id "0HMUICVTLKR8E" accepted.
+2023-10-21 15:00:30.592 -04:00 [DBG] Connection id "0HMUICVTLKR8E" started.
+2023-10-21 15:00:30.616 -04:00 [DBG] Connection 0HMUICVTLKR8E established using the following protocol: "Tls12"
+2023-10-21 15:00:30.694 -04:00 [INF] Request starting HTTP/1.1 POST https://localhost:7180/Product application/json 49
+2023-10-21 15:00:30.700 -04:00 [DBG] 1 candidate(s) found for the request path '/Product'
+2023-10-21 15:00:30.704 -04:00 [DBG] Endpoint 'GenericApi.Controllers.ProductController.Post (GenericApi)' with route pattern 'Product' is valid for the request path '/Product'
+2023-10-21 15:00:30.704 -04:00 [DBG] Request matched endpoint 'GenericApi.Controllers.ProductController.Post (GenericApi)'
+2023-10-21 15:00:30.707 -04:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-10-21 15:00:30.769 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-10-21 15:00:30.772 -04:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-10-21 15:00:30.773 -04:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-10-21 15:00:30.773 -04:00 [DBG] Connection id "0HMUICVTLKR8E" completed keep alive response.
+2023-10-21 15:00:30.773 -04:00 [INF] Request finished HTTP/1.1 POST https://localhost:7180/Product application/json 49 - 401 0 - 79.4221ms
+2023-10-21 15:00:30.774 -04:00 [DBG] Connection id "0HMUICVTLKR8E", Request id "0HMUICVTLKR8E:00000001": started reading request body.
+2023-10-21 15:00:30.774 -04:00 [DBG] Connection id "0HMUICVTLKR8E", Request id "0HMUICVTLKR8E:00000001": done reading request body.
+2023-10-21 15:00:35.567 -04:00 [DBG] Connection id "0HMUICVTLKR8E" received FIN.
+2023-10-21 15:00:35.567 -04:00 [DBG] Connection id "0HMUICVTLKR8E" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-10-21 15:00:35.567 -04:00 [DBG] Connection id "0HMUICVTLKR8E" disconnecting.
+2023-10-21 15:00:35.568 -04:00 [DBG] Connection id "0HMUICVTLKR8E" stopped.
+2023-10-21 15:00:36.742 -04:00 [DBG] Connection id "0HMUICVTLKR8F" accepted.
+2023-10-21 15:00:36.743 -04:00 [DBG] Connection id "0HMUICVTLKR8F" started.
+2023-10-21 15:00:36.765 -04:00 [DBG] Connection 0HMUICVTLKR8F established using the following protocol: "Tls12"
+2023-10-21 15:00:36.765 -04:00 [INF] Request starting HTTP/1.1 POST https://localhost:7180/api/Authentication/login application/json 50
+2023-10-21 15:00:36.766 -04:00 [DBG] 1 candidate(s) found for the request path '/api/Authentication/login'
+2023-10-21 15:00:36.766 -04:00 [DBG] Endpoint 'GenericApi.Controllers.AuthenticationController.Login (GenericApi)' with route pattern 'api/Authentication/login' is valid for the request path '/api/Authentication/login'
+2023-10-21 15:00:36.766 -04:00 [DBG] Request matched endpoint 'GenericApi.Controllers.AuthenticationController.Login (GenericApi)'
+2023-10-21 15:00:36.766 -04:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-10-21 15:00:36.768 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-10-21 15:00:36.769 -04:00 [INF] Executing endpoint 'GenericApi.Controllers.AuthenticationController.Login (GenericApi)'
+2023-10-21 15:00:36.787 -04:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(Domain.Dtos.LoginViewModel) on controller GenericApi.Controllers.AuthenticationController (GenericApi).
+2023-10-21 15:00:36.789 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-10-21 15:00:36.789 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-10-21 15:00:36.789 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-10-21 15:00:36.789 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-10-21 15:00:36.789 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-10-21 15:00:36.791 -04:00 [DBG] Executing controller factory for controller GenericApi.Controllers.AuthenticationController (GenericApi)
+2023-10-21 15:00:36.791 -04:00 [DBG] Executed controller factory for controller GenericApi.Controllers.AuthenticationController (GenericApi)
+2023-10-21 15:00:36.795 -04:00 [DBG] Attempting to bind parameter 'user' of type 'Domain.Dtos.LoginViewModel' ...
+2023-10-21 15:00:36.796 -04:00 [DBG] Attempting to bind parameter 'user' of type 'Domain.Dtos.LoginViewModel' using the name '' in request data ...
+2023-10-21 15:00:36.797 -04:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2023-10-21 15:00:36.802 -04:00 [DBG] Connection id "0HMUICVTLKR8F", Request id "0HMUICVTLKR8F:00000001": started reading request body.
+2023-10-21 15:00:36.802 -04:00 [DBG] Connection id "0HMUICVTLKR8F", Request id "0HMUICVTLKR8F:00000001": done reading request body.
+2023-10-21 15:00:36.806 -04:00 [DBG] JSON input formatter succeeded, deserializing to type 'Domain.Dtos.LoginViewModel'
+2023-10-21 15:00:36.806 -04:00 [DBG] Done attempting to bind parameter 'user' of type 'Domain.Dtos.LoginViewModel'.
+2023-10-21 15:00:36.806 -04:00 [DBG] Done attempting to bind parameter 'user' of type 'Domain.Dtos.LoginViewModel'.
+2023-10-21 15:00:36.806 -04:00 [DBG] Attempting to validate the bound parameter 'user' of type 'Domain.Dtos.LoginViewModel' ...
+2023-10-21 15:00:36.812 -04:00 [DBG] Done attempting to validate the bound parameter 'user' of type 'Domain.Dtos.LoginViewModel'.
+2023-10-21 15:00:36.816 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2023-10-21 15:00:36.817 -04:00 [DBG] No information found on request to perform content negotiation.
+2023-10-21 15:00:36.817 -04:00 [DBG] Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'.
+2023-10-21 15:00:36.817 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2023-10-21 15:00:36.818 -04:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2023-10-21 15:00:36.822 -04:00 [INF] Executed action GenericApi.Controllers.AuthenticationController.Login (GenericApi) in 30.0869ms
+2023-10-21 15:00:36.822 -04:00 [INF] Executed endpoint 'GenericApi.Controllers.AuthenticationController.Login (GenericApi)'
+2023-10-21 15:00:36.822 -04:00 [DBG] Connection id "0HMUICVTLKR8F" completed keep alive response.
+2023-10-21 15:00:36.822 -04:00 [INF] Request finished HTTP/1.1 POST https://localhost:7180/api/Authentication/login application/json 50 - 401 - application/problem+json;+charset=utf-8 56.9035ms
+2023-10-21 15:00:40.567 -04:00 [DBG] Connection id "0HMUICVTLKR8F" received FIN.
+2023-10-21 15:00:40.569 -04:00 [DBG] Connection id "0HMUICVTLKR8F" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-10-21 15:00:40.569 -04:00 [DBG] Connection id "0HMUICVTLKR8F" disconnecting.
+2023-10-21 15:00:40.570 -04:00 [DBG] Connection id "0HMUICVTLKR8F" stopped.
+2023-10-21 15:00:51.364 -04:00 [DBG] Connection id "0HMUICVTLKR8G" accepted.
+2023-10-21 15:00:51.365 -04:00 [DBG] Connection id "0HMUICVTLKR8G" started.
+2023-10-21 15:00:51.418 -04:00 [DBG] Connection 0HMUICVTLKR8G established using the following protocol: "Tls12"
+2023-10-21 15:00:51.420 -04:00 [INF] Request starting HTTP/1.1 POST https://localhost:7180/api/Authentication/login application/json 58
+2023-10-21 15:00:51.421 -04:00 [DBG] 1 candidate(s) found for the request path '/api/Authentication/login'
+2023-10-21 15:00:51.421 -04:00 [DBG] Endpoint 'GenericApi.Controllers.AuthenticationController.Login (GenericApi)' with route pattern 'api/Authentication/login' is valid for the request path '/api/Authentication/login'
+2023-10-21 15:00:51.421 -04:00 [DBG] Request matched endpoint 'GenericApi.Controllers.AuthenticationController.Login (GenericApi)'
+2023-10-21 15:00:51.422 -04:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-10-21 15:00:51.424 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-10-21 15:00:51.425 -04:00 [INF] Executing endpoint 'GenericApi.Controllers.AuthenticationController.Login (GenericApi)'
+2023-10-21 15:00:51.426 -04:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(Domain.Dtos.LoginViewModel) on controller GenericApi.Controllers.AuthenticationController (GenericApi).
+2023-10-21 15:00:51.427 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-10-21 15:00:51.427 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-10-21 15:00:51.427 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-10-21 15:00:51.428 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-10-21 15:00:51.428 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-10-21 15:00:51.428 -04:00 [DBG] Executing controller factory for controller GenericApi.Controllers.AuthenticationController (GenericApi)
+2023-10-21 15:00:51.428 -04:00 [DBG] Executed controller factory for controller GenericApi.Controllers.AuthenticationController (GenericApi)
+2023-10-21 15:00:51.429 -04:00 [DBG] Attempting to bind parameter 'user' of type 'Domain.Dtos.LoginViewModel' ...
+2023-10-21 15:00:51.430 -04:00 [DBG] Attempting to bind parameter 'user' of type 'Domain.Dtos.LoginViewModel' using the name '' in request data ...
+2023-10-21 15:00:51.430 -04:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2023-10-21 15:00:51.431 -04:00 [DBG] Connection id "0HMUICVTLKR8G", Request id "0HMUICVTLKR8G:00000001": started reading request body.
+2023-10-21 15:00:51.431 -04:00 [DBG] Connection id "0HMUICVTLKR8G", Request id "0HMUICVTLKR8G:00000001": done reading request body.
+2023-10-21 15:00:51.431 -04:00 [DBG] JSON input formatter succeeded, deserializing to type 'Domain.Dtos.LoginViewModel'
+2023-10-21 15:00:51.432 -04:00 [DBG] Done attempting to bind parameter 'user' of type 'Domain.Dtos.LoginViewModel'.
+2023-10-21 15:00:51.432 -04:00 [DBG] Done attempting to bind parameter 'user' of type 'Domain.Dtos.LoginViewModel'.
+2023-10-21 15:00:51.432 -04:00 [DBG] Attempting to validate the bound parameter 'user' of type 'Domain.Dtos.LoginViewModel' ...
+2023-10-21 15:00:51.432 -04:00 [DBG] Done attempting to validate the bound parameter 'user' of type 'Domain.Dtos.LoginViewModel'.
+2023-10-21 15:00:58.652 -04:00 [INF] Executed action GenericApi.Controllers.AuthenticationController.Login (GenericApi) in 7224.0176ms
+2023-10-21 15:00:58.654 -04:00 [INF] Executed endpoint 'GenericApi.Controllers.AuthenticationController.Login (GenericApi)'
+2023-10-21 15:00:58.655 -04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentOutOfRangeException: IDX10720: Unable to create KeyedHashAlgorithm for algorithm 'HS256', the key size must be greater than: '256' bits, key has '184' bits. (Parameter 'keyBytes')
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.ValidateKeySize(Byte[] keyBytes, String algorithm, Int32 expectedNumberOfBytes)
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.CreateKeyedHashAlgorithm(Byte[] keyBytes, String algorithm)
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider.CreateKeyedHashAlgorithm()
+   at Microsoft.IdentityModel.Tokens.DisposableObjectPool`1.CreateInstance()
+   at Microsoft.IdentityModel.Tokens.DisposableObjectPool`1.Allocate()
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider.GetKeyedHashAlgorithm(Byte[] keyBytes, String algorithm)
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider.Sign(Byte[] input)
+   at Microsoft.IdentityModel.JsonWebTokens.JwtTokenUtilities.CreateEncodedSignature(String input, SigningCredentials signingCredentials)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.WriteToken(SecurityToken token)
+   at GenericApi.Controllers.AuthenticationController.Login(LoginViewModel user) in /Users/brunohashimoto/Projects/GenericApi/GenericApi/Controllers/AuthenticationController.cs:line 42
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-10-21 15:00:58.662 -04:00 [DBG] Connection id "0HMUICVTLKR8G" completed keep alive response.
+2023-10-21 15:00:58.663 -04:00 [INF] Request finished HTTP/1.1 POST https://localhost:7180/api/Authentication/login application/json 58 - 500 - text/plain;+charset=utf-8 7242.8283ms
+2023-10-21 15:01:00.569 -04:00 [DBG] Connection id "0HMUICVTLKR8G" received FIN.
+2023-10-21 15:01:00.569 -04:00 [DBG] Connection id "0HMUICVTLKR8G" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-10-21 15:01:00.569 -04:00 [DBG] Connection id "0HMUICVTLKR8G" disconnecting.
+2023-10-21 15:01:00.570 -04:00 [DBG] Connection id "0HMUICVTLKR8G" stopped.
+2023-10-21 15:01:53.661 -04:00 [DBG] Config reload token fired. Checking for changes...
+2023-10-21 15:01:56.181 -04:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-10-21 15:01:56.225 -04:00 [DBG] Hosting starting
+2023-10-21 15:01:56.236 -04:00 [INF] User profile is available. Using '/Users/brunohashimoto/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-10-21 15:01:56.240 -04:00 [DBG] Reading data from file '/Users/brunohashimoto/.aspnet/DataProtection-Keys/key-4a804253-0c3b-4398-b81e-f5306380f3ea.xml'.
+2023-10-21 15:01:56.242 -04:00 [DBG] Reading data from file '/Users/brunohashimoto/.aspnet/DataProtection-Keys/key-48a325e2-4a5d-43ef-a463-95a0855766b0.xml'.
+2023-10-21 15:01:56.243 -04:00 [DBG] Reading data from file '/Users/brunohashimoto/.aspnet/DataProtection-Keys/key-d09f4f17-e35f-497a-95d6-f9538db6be82.xml'.
+2023-10-21 15:01:56.243 -04:00 [DBG] Reading data from file '/Users/brunohashimoto/.aspnet/DataProtection-Keys/key-0a9fc022-248d-411b-9442-abf5f0f06753.xml'.
+2023-10-21 15:01:56.245 -04:00 [DBG] Found key {4a804253-0c3b-4398-b81e-f5306380f3ea}.
+2023-10-21 15:01:56.246 -04:00 [DBG] Found key {48a325e2-4a5d-43ef-a463-95a0855766b0}.
+2023-10-21 15:01:56.246 -04:00 [DBG] Found key {d09f4f17-e35f-497a-95d6-f9538db6be82}.
+2023-10-21 15:01:56.246 -04:00 [DBG] Found key {0a9fc022-248d-411b-9442-abf5f0f06753}.
+2023-10-21 15:01:56.249 -04:00 [DBG] Considering key {d09f4f17-e35f-497a-95d6-f9538db6be82} with expiration date 2024-01-14 02:18:34Z as default key.
+2023-10-21 15:01:56.249 -04:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-10-21 15:01:56.252 -04:00 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2023-10-21 15:01:56.252 -04:00 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2023-10-21 15:01:56.253 -04:00 [DBG] Using key {d09f4f17-e35f-497a-95d6-f9538db6be82} as the default key.
+2023-10-21 15:01:56.254 -04:00 [DBG] Key ring with default key {d09f4f17-e35f-497a-95d6-f9538db6be82} was loaded during application startup.
+2023-10-21 15:01:56.579 -04:00 [INF] Now listening on: https://localhost:7180
+2023-10-21 15:01:56.579 -04:00 [INF] Now listening on: http://localhost:5059
+2023-10-21 15:01:56.579 -04:00 [DBG] Loaded hosting startup assembly GenericApi
+2023-10-21 15:01:56.579 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-21 15:01:56.579 -04:00 [INF] Hosting environment: Development
+2023-10-21 15:01:56.579 -04:00 [INF] Content root path: /Users/brunohashimoto/Projects/GenericApi/GenericApi
+2023-10-21 15:01:56.580 -04:00 [DBG] Hosting started
+2023-10-21 15:01:56.613 -04:00 [DBG] Connection id "0HMUID0P5GG4P" accepted.
+2023-10-21 15:01:56.614 -04:00 [DBG] Connection id "0HMUID0P5GG4P" started.
+2023-10-21 15:01:57.546 -04:00 [DBG] Connection id "0HMUID0P5GG4P" received FIN.
+2023-10-21 15:01:57.556 -04:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-10-21 15:01:57.595 -04:00 [DBG] Connection id "0HMUID0P5GG4P" stopped.
+2023-10-21 15:01:57.599 -04:00 [DBG] Connection id "0HMUID0P5GG4P" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-10-21 15:01:57.656 -04:00 [DBG] Connection id "0HMUID0P5GG4Q" accepted.
+2023-10-21 15:01:57.660 -04:00 [DBG] Connection id "0HMUID0P5GG4R" accepted.
+2023-10-21 15:01:57.660 -04:00 [DBG] Connection id "0HMUID0P5GG4Q" started.
+2023-10-21 15:01:57.661 -04:00 [DBG] Connection id "0HMUID0P5GG4R" started.
+2023-10-21 15:01:57.753 -04:00 [DBG] Connection 0HMUID0P5GG4R established using the following protocol: "Tls12"
+2023-10-21 15:01:57.753 -04:00 [DBG] Connection 0HMUID0P5GG4Q established using the following protocol: "Tls12"
+2023-10-21 15:01:57.774 -04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7180/swagger/index.html - -
+2023-10-21 15:01:57.775 -04:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-10-21 15:01:57.785 -04:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2023-10-21 15:01:57.785 -04:00 [DBG] Request did not match any endpoints
+2023-10-21 15:01:57.829 -04:00 [DBG] Connection id "0HMUID0P5GG4R" completed keep alive response.
+2023-10-21 15:01:57.831 -04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7180/swagger/index.html - - - 200 - text/html;charset=utf-8 57.1626ms
+2023-10-21 15:01:58.231 -04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7180/swagger/v1/swagger.json - -
+2023-10-21 15:01:58.232 -04:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2023-10-21 15:01:58.232 -04:00 [DBG] Request did not match any endpoints
+2023-10-21 15:01:58.282 -04:00 [DBG] Connection id "0HMUID0P5GG4R" completed keep alive response.
+2023-10-21 15:01:58.282 -04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7180/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 50.5087ms
+2023-10-21 15:02:00.582 -04:00 [DBG] Connection id "0HMUID0P5GG4Q" received FIN.
+2023-10-21 15:02:00.582 -04:00 [DBG] Connection id "0HMUID0P5GG4R" received FIN.
+2023-10-21 15:02:00.583 -04:00 [DBG] Connection id "0HMUID0P5GG4Q" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-10-21 15:02:00.583 -04:00 [DBG] Connection id "0HMUID0P5GG4Q" disconnecting.
+2023-10-21 15:02:00.586 -04:00 [DBG] Connection id "0HMUID0P5GG4R" disconnecting.
+2023-10-21 15:02:00.587 -04:00 [DBG] Connection id "0HMUID0P5GG4R" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-10-21 15:02:00.587 -04:00 [DBG] Connection id "0HMUID0P5GG4Q" stopped.
+2023-10-21 15:02:00.587 -04:00 [DBG] Connection id "0HMUID0P5GG4R" stopped.
+2023-10-21 15:02:02.137 -04:00 [DBG] Connection id "0HMUID0P5GG4S" accepted.
+2023-10-21 15:02:02.137 -04:00 [DBG] Connection id "0HMUID0P5GG4S" started.
+2023-10-21 15:02:02.188 -04:00 [DBG] Connection 0HMUID0P5GG4S established using the following protocol: "Tls12"
+2023-10-21 15:02:02.189 -04:00 [INF] Request starting HTTP/1.1 POST https://localhost:7180/api/Authentication/login application/json 50
+2023-10-21 15:02:02.195 -04:00 [DBG] 1 candidate(s) found for the request path '/api/Authentication/login'
+2023-10-21 15:02:02.198 -04:00 [DBG] Endpoint 'GenericApi.Controllers.AuthenticationController.Login (GenericApi)' with route pattern 'api/Authentication/login' is valid for the request path '/api/Authentication/login'
+2023-10-21 15:02:02.199 -04:00 [DBG] Request matched endpoint 'GenericApi.Controllers.AuthenticationController.Login (GenericApi)'
+2023-10-21 15:02:02.201 -04:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-10-21 15:02:02.251 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-10-21 15:02:02.253 -04:00 [INF] Executing endpoint 'GenericApi.Controllers.AuthenticationController.Login (GenericApi)'
+2023-10-21 15:02:02.261 -04:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(Domain.Dtos.LoginViewModel) on controller GenericApi.Controllers.AuthenticationController (GenericApi).
+2023-10-21 15:02:02.262 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-10-21 15:02:02.262 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-10-21 15:02:02.262 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-10-21 15:02:02.262 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-10-21 15:02:02.262 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-10-21 15:02:02.262 -04:00 [DBG] Executing controller factory for controller GenericApi.Controllers.AuthenticationController (GenericApi)
+2023-10-21 15:02:02.263 -04:00 [DBG] Executed controller factory for controller GenericApi.Controllers.AuthenticationController (GenericApi)
+2023-10-21 15:02:02.264 -04:00 [DBG] Attempting to bind parameter 'user' of type 'Domain.Dtos.LoginViewModel' ...
+2023-10-21 15:02:02.265 -04:00 [DBG] Attempting to bind parameter 'user' of type 'Domain.Dtos.LoginViewModel' using the name '' in request data ...
+2023-10-21 15:02:02.266 -04:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2023-10-21 15:02:02.268 -04:00 [DBG] Connection id "0HMUID0P5GG4S", Request id "0HMUID0P5GG4S:00000001": started reading request body.
+2023-10-21 15:02:02.268 -04:00 [DBG] Connection id "0HMUID0P5GG4S", Request id "0HMUID0P5GG4S:00000001": done reading request body.
+2023-10-21 15:02:02.270 -04:00 [DBG] JSON input formatter succeeded, deserializing to type 'Domain.Dtos.LoginViewModel'
+2023-10-21 15:02:02.270 -04:00 [DBG] Done attempting to bind parameter 'user' of type 'Domain.Dtos.LoginViewModel'.
+2023-10-21 15:02:02.270 -04:00 [DBG] Done attempting to bind parameter 'user' of type 'Domain.Dtos.LoginViewModel'.
+2023-10-21 15:02:02.270 -04:00 [DBG] Attempting to validate the bound parameter 'user' of type 'Domain.Dtos.LoginViewModel' ...
+2023-10-21 15:02:02.273 -04:00 [DBG] Done attempting to validate the bound parameter 'user' of type 'Domain.Dtos.LoginViewModel'.
+2023-10-21 15:02:02.275 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2023-10-21 15:02:02.276 -04:00 [DBG] No information found on request to perform content negotiation.
+2023-10-21 15:02:02.276 -04:00 [DBG] Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'.
+2023-10-21 15:02:02.276 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2023-10-21 15:02:02.276 -04:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2023-10-21 15:02:02.279 -04:00 [INF] Executed action GenericApi.Controllers.AuthenticationController.Login (GenericApi) in 15.286ms
+2023-10-21 15:02:02.279 -04:00 [INF] Executed endpoint 'GenericApi.Controllers.AuthenticationController.Login (GenericApi)'
+2023-10-21 15:02:02.279 -04:00 [DBG] Connection id "0HMUID0P5GG4S" completed keep alive response.
+2023-10-21 15:02:02.279 -04:00 [INF] Request finished HTTP/1.1 POST https://localhost:7180/api/Authentication/login application/json 50 - 401 - application/problem+json;+charset=utf-8 89.8015ms
+2023-10-21 15:02:05.581 -04:00 [DBG] Connection id "0HMUID0P5GG4S" received FIN.
+2023-10-21 15:02:05.581 -04:00 [DBG] Connection id "0HMUID0P5GG4S" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-10-21 15:02:05.581 -04:00 [DBG] Connection id "0HMUID0P5GG4S" disconnecting.
+2023-10-21 15:02:05.582 -04:00 [DBG] Connection id "0HMUID0P5GG4S" stopped.
+2023-10-21 15:02:19.173 -04:00 [DBG] Connection id "0HMUID0P5GG4T" accepted.
+2023-10-21 15:02:19.174 -04:00 [DBG] Connection id "0HMUID0P5GG4T" started.
+2023-10-21 15:02:19.201 -04:00 [DBG] Connection 0HMUID0P5GG4T established using the following protocol: "Tls12"
+2023-10-21 15:02:19.203 -04:00 [INF] Request starting HTTP/1.1 POST https://localhost:7180/api/Authentication/login application/json 58
+2023-10-21 15:02:19.203 -04:00 [DBG] 1 candidate(s) found for the request path '/api/Authentication/login'
+2023-10-21 15:02:19.204 -04:00 [DBG] Endpoint 'GenericApi.Controllers.AuthenticationController.Login (GenericApi)' with route pattern 'api/Authentication/login' is valid for the request path '/api/Authentication/login'
+2023-10-21 15:02:19.204 -04:00 [DBG] Request matched endpoint 'GenericApi.Controllers.AuthenticationController.Login (GenericApi)'
+2023-10-21 15:02:19.205 -04:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-10-21 15:02:19.208 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-10-21 15:02:19.209 -04:00 [INF] Executing endpoint 'GenericApi.Controllers.AuthenticationController.Login (GenericApi)'
+2023-10-21 15:02:19.210 -04:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(Domain.Dtos.LoginViewModel) on controller GenericApi.Controllers.AuthenticationController (GenericApi).
+2023-10-21 15:02:19.210 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-10-21 15:02:19.210 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-10-21 15:02:19.210 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-10-21 15:02:19.210 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-10-21 15:02:19.210 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-10-21 15:02:19.210 -04:00 [DBG] Executing controller factory for controller GenericApi.Controllers.AuthenticationController (GenericApi)
+2023-10-21 15:02:19.210 -04:00 [DBG] Executed controller factory for controller GenericApi.Controllers.AuthenticationController (GenericApi)
+2023-10-21 15:02:19.211 -04:00 [DBG] Attempting to bind parameter 'user' of type 'Domain.Dtos.LoginViewModel' ...
+2023-10-21 15:02:19.212 -04:00 [DBG] Attempting to bind parameter 'user' of type 'Domain.Dtos.LoginViewModel' using the name '' in request data ...
+2023-10-21 15:02:19.212 -04:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2023-10-21 15:02:19.212 -04:00 [DBG] Connection id "0HMUID0P5GG4T", Request id "0HMUID0P5GG4T:00000001": started reading request body.
+2023-10-21 15:02:19.212 -04:00 [DBG] Connection id "0HMUID0P5GG4T", Request id "0HMUID0P5GG4T:00000001": done reading request body.
+2023-10-21 15:02:19.213 -04:00 [DBG] JSON input formatter succeeded, deserializing to type 'Domain.Dtos.LoginViewModel'
+2023-10-21 15:02:19.213 -04:00 [DBG] Done attempting to bind parameter 'user' of type 'Domain.Dtos.LoginViewModel'.
+2023-10-21 15:02:19.213 -04:00 [DBG] Done attempting to bind parameter 'user' of type 'Domain.Dtos.LoginViewModel'.
+2023-10-21 15:02:19.213 -04:00 [DBG] Attempting to validate the bound parameter 'user' of type 'Domain.Dtos.LoginViewModel' ...
+2023-10-21 15:02:19.213 -04:00 [DBG] Done attempting to validate the bound parameter 'user' of type 'Domain.Dtos.LoginViewModel'.
+2023-10-21 15:02:19.259 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2023-10-21 15:02:19.259 -04:00 [DBG] No information found on request to perform content negotiation.
+2023-10-21 15:02:19.259 -04:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-10-21 15:02:19.259 -04:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-10-21 15:02:19.259 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-10-21 15:02:19.259 -04:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-10-21 15:02:19.261 -04:00 [INF] Executed action GenericApi.Controllers.AuthenticationController.Login (GenericApi) in 51.0255ms
+2023-10-21 15:02:19.261 -04:00 [INF] Executed endpoint 'GenericApi.Controllers.AuthenticationController.Login (GenericApi)'
+2023-10-21 15:02:19.261 -04:00 [DBG] Connection id "0HMUID0P5GG4T" completed keep alive response.
+2023-10-21 15:02:19.262 -04:00 [INF] Request finished HTTP/1.1 POST https://localhost:7180/api/Authentication/login application/json 58 - 200 - application/json;+charset=utf-8 59.0902ms
+2023-10-21 15:02:20.583 -04:00 [DBG] Connection id "0HMUID0P5GG4T" received FIN.
+2023-10-21 15:02:20.583 -04:00 [DBG] Connection id "0HMUID0P5GG4T" disconnecting.
+2023-10-21 15:02:20.583 -04:00 [DBG] Connection id "0HMUID0P5GG4T" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-10-21 15:02:20.585 -04:00 [DBG] Connection id "0HMUID0P5GG4T" stopped.
+2023-10-21 15:13:10.808 -04:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-10-21 15:13:10.873 -04:00 [DBG] Hosting starting
+2023-10-21 15:13:10.885 -04:00 [INF] User profile is available. Using '/Users/brunohashimoto/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-10-21 15:13:10.887 -04:00 [DBG] Reading data from file '/Users/brunohashimoto/.aspnet/DataProtection-Keys/key-4a804253-0c3b-4398-b81e-f5306380f3ea.xml'.
+2023-10-21 15:13:10.890 -04:00 [DBG] Reading data from file '/Users/brunohashimoto/.aspnet/DataProtection-Keys/key-48a325e2-4a5d-43ef-a463-95a0855766b0.xml'.
+2023-10-21 15:13:10.890 -04:00 [DBG] Reading data from file '/Users/brunohashimoto/.aspnet/DataProtection-Keys/key-d09f4f17-e35f-497a-95d6-f9538db6be82.xml'.
+2023-10-21 15:13:10.891 -04:00 [DBG] Reading data from file '/Users/brunohashimoto/.aspnet/DataProtection-Keys/key-0a9fc022-248d-411b-9442-abf5f0f06753.xml'.
+2023-10-21 15:13:10.892 -04:00 [DBG] Found key {4a804253-0c3b-4398-b81e-f5306380f3ea}.
+2023-10-21 15:13:10.894 -04:00 [DBG] Found key {48a325e2-4a5d-43ef-a463-95a0855766b0}.
+2023-10-21 15:13:10.894 -04:00 [DBG] Found key {d09f4f17-e35f-497a-95d6-f9538db6be82}.
+2023-10-21 15:13:10.894 -04:00 [DBG] Found key {0a9fc022-248d-411b-9442-abf5f0f06753}.
+2023-10-21 15:13:10.896 -04:00 [DBG] Considering key {d09f4f17-e35f-497a-95d6-f9538db6be82} with expiration date 2024-01-14 02:18:34Z as default key.
+2023-10-21 15:13:10.897 -04:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-10-21 15:13:10.900 -04:00 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2023-10-21 15:13:10.900 -04:00 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2023-10-21 15:13:10.901 -04:00 [DBG] Using key {d09f4f17-e35f-497a-95d6-f9538db6be82} as the default key.
+2023-10-21 15:13:10.901 -04:00 [DBG] Key ring with default key {d09f4f17-e35f-497a-95d6-f9538db6be82} was loaded during application startup.
+2023-10-21 15:13:11.196 -04:00 [INF] Now listening on: https://localhost:7180
+2023-10-21 15:13:11.197 -04:00 [INF] Now listening on: http://localhost:5059
+2023-10-21 15:13:11.197 -04:00 [DBG] Loaded hosting startup assembly GenericApi
+2023-10-21 15:13:11.198 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-21 15:13:11.198 -04:00 [INF] Hosting environment: Development
+2023-10-21 15:13:11.198 -04:00 [INF] Content root path: /Users/brunohashimoto/Projects/GenericApi/GenericApi
+2023-10-21 15:13:11.198 -04:00 [DBG] Hosting started
+2023-10-21 15:13:11.202 -04:00 [DBG] Connection id "0HMUID726SKO5" accepted.
+2023-10-21 15:13:11.202 -04:00 [DBG] Connection id "0HMUID726SKO5" started.
+2023-10-21 15:13:12.201 -04:00 [DBG] Connection id "0HMUID726SKO5" received FIN.
+2023-10-21 15:13:12.210 -04:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-10-21 15:13:12.251 -04:00 [DBG] Connection id "0HMUID726SKO5" stopped.
+2023-10-21 15:13:12.253 -04:00 [DBG] Connection id "0HMUID726SKO5" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-10-21 15:13:12.298 -04:00 [DBG] Connection id "0HMUID726SKO6" accepted.
+2023-10-21 15:13:12.299 -04:00 [DBG] Connection id "0HMUID726SKO7" accepted.
+2023-10-21 15:13:12.299 -04:00 [DBG] Connection id "0HMUID726SKO6" started.
+2023-10-21 15:13:12.301 -04:00 [DBG] Connection id "0HMUID726SKO7" started.
+2023-10-21 15:13:12.421 -04:00 [DBG] Connection 0HMUID726SKO7 established using the following protocol: "Tls12"
+2023-10-21 15:13:12.434 -04:00 [DBG] Connection 0HMUID726SKO6 established using the following protocol: "Tls12"
+2023-10-21 15:13:12.453 -04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7180/swagger/index.html - -
+2023-10-21 15:13:12.454 -04:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-10-21 15:13:12.478 -04:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2023-10-21 15:13:12.478 -04:00 [DBG] Request did not match any endpoints
+2023-10-21 15:13:12.590 -04:00 [DBG] Connection id "0HMUID726SKO7" completed keep alive response.
+2023-10-21 15:13:12.591 -04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7180/swagger/index.html - - - 200 - text/html;charset=utf-8 139.1205ms
+2023-10-21 15:13:12.989 -04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7180/swagger/v1/swagger.json - -
+2023-10-21 15:13:12.990 -04:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2023-10-21 15:13:12.990 -04:00 [DBG] Request did not match any endpoints
+2023-10-21 15:13:13.043 -04:00 [DBG] Connection id "0HMUID726SKO7" completed keep alive response.
+2023-10-21 15:13:13.043 -04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7180/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 53.5458ms
+2023-10-21 15:13:15.743 -04:00 [DBG] Connection id "0HMUID726SKO7" received FIN.
+2023-10-21 15:13:15.743 -04:00 [DBG] Connection id "0HMUID726SKO6" received FIN.
+2023-10-21 15:13:15.744 -04:00 [DBG] Connection id "0HMUID726SKO7" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-10-21 15:13:15.745 -04:00 [DBG] Connection id "0HMUID726SKO7" disconnecting.
+2023-10-21 15:13:15.745 -04:00 [DBG] Connection id "0HMUID726SKO6" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-10-21 15:13:15.745 -04:00 [DBG] Connection id "0HMUID726SKO6" disconnecting.
+2023-10-21 15:13:15.747 -04:00 [DBG] Connection id "0HMUID726SKO7" stopped.
+2023-10-21 15:13:15.747 -04:00 [DBG] Connection id "0HMUID726SKO6" stopped.
+2023-10-21 15:13:15.820 -04:00 [DBG] Connection id "0HMUID726SKO8" accepted.
+2023-10-21 15:13:15.820 -04:00 [DBG] Connection id "0HMUID726SKO8" started.
+2023-10-21 15:13:15.849 -04:00 [DBG] Connection 0HMUID726SKO8 established using the following protocol: "Tls12"
+2023-10-21 15:13:15.852 -04:00 [INF] Request starting HTTP/1.1 POST https://localhost:7180/Product application/json 49
+2023-10-21 15:13:15.860 -04:00 [DBG] 1 candidate(s) found for the request path '/Product'
+2023-10-21 15:13:15.864 -04:00 [DBG] Endpoint 'GenericApi.Controllers.ProductController.Post (GenericApi)' with route pattern 'Product' is valid for the request path '/Product'
+2023-10-21 15:13:15.865 -04:00 [DBG] Request matched endpoint 'GenericApi.Controllers.ProductController.Post (GenericApi)'
+2023-10-21 15:13:15.868 -04:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-10-21 15:13:15.930 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-10-21 15:13:15.932 -04:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-10-21 15:13:15.934 -04:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-10-21 15:13:15.934 -04:00 [DBG] Connection id "0HMUID726SKO8" completed keep alive response.
+2023-10-21 15:13:15.934 -04:00 [INF] Request finished HTTP/1.1 POST https://localhost:7180/Product application/json 49 - 401 0 - 82.7665ms
+2023-10-21 15:13:15.935 -04:00 [DBG] Connection id "0HMUID726SKO8", Request id "0HMUID726SKO8:00000001": started reading request body.
+2023-10-21 15:13:15.935 -04:00 [DBG] Connection id "0HMUID726SKO8", Request id "0HMUID726SKO8:00000001": done reading request body.
+2023-10-21 15:13:20.743 -04:00 [DBG] Connection id "0HMUID726SKO8" received FIN.
+2023-10-21 15:13:20.745 -04:00 [DBG] Connection id "0HMUID726SKO8" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-10-21 15:13:20.746 -04:00 [DBG] Connection id "0HMUID726SKO8" disconnecting.
+2023-10-21 15:13:20.746 -04:00 [DBG] Connection id "0HMUID726SKO8" stopped.
+2023-10-21 15:13:26.320 -04:00 [DBG] Connection id "0HMUID726SKO9" accepted.
+2023-10-21 15:13:26.321 -04:00 [DBG] Connection id "0HMUID726SKO9" started.
+2023-10-21 15:13:26.353 -04:00 [DBG] Connection 0HMUID726SKO9 established using the following protocol: "Tls12"
+2023-10-21 15:13:26.402 -04:00 [INF] Request starting HTTP/1.1 POST https://localhost:7180/api/Authentication/authenticate application/json 46
+2023-10-21 15:13:26.403 -04:00 [DBG] 1 candidate(s) found for the request path '/api/Authentication/authenticate'
+2023-10-21 15:13:26.403 -04:00 [DBG] Endpoint 'GenericApi.Controllers.AuthenticationController.Login (GenericApi)' with route pattern 'api/Authentication/authenticate' is valid for the request path '/api/Authentication/authenticate'
+2023-10-21 15:13:26.404 -04:00 [DBG] Request matched endpoint 'GenericApi.Controllers.AuthenticationController.Login (GenericApi)'
+2023-10-21 15:13:26.404 -04:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-10-21 15:13:26.410 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-10-21 15:13:26.412 -04:00 [INF] Executing endpoint 'GenericApi.Controllers.AuthenticationController.Login (GenericApi)'
+2023-10-21 15:13:26.438 -04:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(Application.Dtos.LoginViewModel) on controller GenericApi.Controllers.AuthenticationController (GenericApi).
+2023-10-21 15:13:26.439 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-10-21 15:13:26.439 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-10-21 15:13:26.440 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-10-21 15:13:26.440 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-10-21 15:13:26.440 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-10-21 15:13:26.441 -04:00 [DBG] Executing controller factory for controller GenericApi.Controllers.AuthenticationController (GenericApi)
+2023-10-21 15:13:26.447 -04:00 [INF] Executed action GenericApi.Controllers.AuthenticationController.Login (GenericApi) in 4.0925ms
+2023-10-21 15:13:26.448 -04:00 [INF] Executed endpoint 'GenericApi.Controllers.AuthenticationController.Login (GenericApi)'
+2023-10-21 15:13:26.449 -04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Application.Factory.JwtFactory' while attempting to activate 'GenericApi.Controllers.AuthenticationController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method3(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-10-21 15:13:26.454 -04:00 [DBG] Connection id "0HMUID726SKO9" completed keep alive response.
+2023-10-21 15:13:26.454 -04:00 [INF] Request finished HTTP/1.1 POST https://localhost:7180/api/Authentication/authenticate application/json 46 - 500 - text/plain;+charset=utf-8 52.0775ms
+2023-10-21 15:13:26.454 -04:00 [DBG] Connection id "0HMUID726SKO9", Request id "0HMUID726SKO9:00000001": started reading request body.
+2023-10-21 15:13:26.455 -04:00 [DBG] Connection id "0HMUID726SKO9", Request id "0HMUID726SKO9:00000001": done reading request body.
+2023-10-21 15:13:30.745 -04:00 [DBG] Connection id "0HMUID726SKO9" received FIN.
+2023-10-21 15:13:30.747 -04:00 [DBG] Connection id "0HMUID726SKO9" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-10-21 15:13:30.747 -04:00 [DBG] Connection id "0HMUID726SKO9" disconnecting.
+2023-10-21 15:13:30.747 -04:00 [DBG] Connection id "0HMUID726SKO9" stopped.
+2023-10-21 17:12:18.823 -04:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-10-21 17:12:18.924 -04:00 [DBG] Hosting starting
+2023-10-21 17:12:18.961 -04:00 [INF] User profile is available. Using '/Users/brunohashimoto/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-10-21 17:12:18.966 -04:00 [DBG] Reading data from file '/Users/brunohashimoto/.aspnet/DataProtection-Keys/key-4a804253-0c3b-4398-b81e-f5306380f3ea.xml'.
+2023-10-21 17:12:18.970 -04:00 [DBG] Reading data from file '/Users/brunohashimoto/.aspnet/DataProtection-Keys/key-48a325e2-4a5d-43ef-a463-95a0855766b0.xml'.
+2023-10-21 17:12:18.971 -04:00 [DBG] Reading data from file '/Users/brunohashimoto/.aspnet/DataProtection-Keys/key-d09f4f17-e35f-497a-95d6-f9538db6be82.xml'.
+2023-10-21 17:12:18.971 -04:00 [DBG] Reading data from file '/Users/brunohashimoto/.aspnet/DataProtection-Keys/key-0a9fc022-248d-411b-9442-abf5f0f06753.xml'.
+2023-10-21 17:12:18.974 -04:00 [DBG] Found key {4a804253-0c3b-4398-b81e-f5306380f3ea}.
+2023-10-21 17:12:18.977 -04:00 [DBG] Found key {48a325e2-4a5d-43ef-a463-95a0855766b0}.
+2023-10-21 17:12:18.977 -04:00 [DBG] Found key {d09f4f17-e35f-497a-95d6-f9538db6be82}.
+2023-10-21 17:12:18.977 -04:00 [DBG] Found key {0a9fc022-248d-411b-9442-abf5f0f06753}.
+2023-10-21 17:12:18.981 -04:00 [DBG] Considering key {d09f4f17-e35f-497a-95d6-f9538db6be82} with expiration date 2024-01-14 02:18:34Z as default key.
+2023-10-21 17:12:18.982 -04:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-10-21 17:12:18.987 -04:00 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2023-10-21 17:12:18.987 -04:00 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2023-10-21 17:12:18.989 -04:00 [DBG] Using key {d09f4f17-e35f-497a-95d6-f9538db6be82} as the default key.
+2023-10-21 17:12:18.990 -04:00 [DBG] Key ring with default key {d09f4f17-e35f-497a-95d6-f9538db6be82} was loaded during application startup.
+2023-10-21 17:12:19.393 -04:00 [INF] Now listening on: https://localhost:7180
+2023-10-21 17:12:19.419 -04:00 [INF] Now listening on: http://localhost:5059
+2023-10-21 17:12:19.419 -04:00 [DBG] Loaded hosting startup assembly GenericApi
+2023-10-21 17:12:19.420 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-21 17:12:19.420 -04:00 [INF] Hosting environment: Development
+2023-10-21 17:12:19.420 -04:00 [INF] Content root path: /Users/brunohashimoto/Projects/GenericApi/GenericApi
+2023-10-21 17:12:19.420 -04:00 [DBG] Hosting started
+2023-10-21 17:12:19.444 -04:00 [DBG] Connection id "0HMUIF9KHQT6F" accepted.
+2023-10-21 17:12:19.444 -04:00 [DBG] Connection id "0HMUIF9KHQT6F" started.
+2023-10-21 17:12:20.439 -04:00 [DBG] Connection id "0HMUIF9KHQT6F" received FIN.
+2023-10-21 17:12:20.451 -04:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-10-21 17:12:20.476 -04:00 [DBG] Connection id "0HMUIF9KHQT6F" stopped.
+2023-10-21 17:12:20.479 -04:00 [DBG] Connection id "0HMUIF9KHQT6F" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-10-21 17:12:20.823 -04:00 [DBG] Connection id "0HMUIF9KHQT6G" accepted.
+2023-10-21 17:12:20.824 -04:00 [DBG] Connection id "0HMUIF9KHQT6G" started.
+2023-10-21 17:12:20.928 -04:00 [DBG] Connection 0HMUIF9KHQT6G established using the following protocol: "Tls12"
+2023-10-21 17:12:21.017 -04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7180/swagger/index.html - -
+2023-10-21 17:12:21.019 -04:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-10-21 17:12:21.054 -04:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2023-10-21 17:12:21.055 -04:00 [DBG] Request did not match any endpoints
+2023-10-21 17:12:21.175 -04:00 [DBG] Connection id "0HMUIF9KHQT6G" completed keep alive response.
+2023-10-21 17:12:21.177 -04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7180/swagger/index.html - - - 200 - text/html;charset=utf-8 162.9475ms
+2023-10-21 17:12:22.801 -04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7180/swagger/v1/swagger.json - -
+2023-10-21 17:12:22.803 -04:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2023-10-21 17:12:22.803 -04:00 [DBG] Request did not match any endpoints
+2023-10-21 17:12:22.941 -04:00 [DBG] Connection id "0HMUIF9KHQT6G" completed keep alive response.
+2023-10-21 17:12:22.941 -04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7180/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 140.2411ms
+2023-10-21 17:12:30.362 -04:00 [INF] Request starting HTTP/1.1 POST https://localhost:7180/Product application/json 49
+2023-10-21 17:12:30.367 -04:00 [DBG] 1 candidate(s) found for the request path '/Product'
+2023-10-21 17:12:30.371 -04:00 [DBG] Endpoint 'GenericApi.Controllers.ProductController.Post (GenericApi)' with route pattern 'Product' is valid for the request path '/Product'
+2023-10-21 17:12:30.371 -04:00 [DBG] Request matched endpoint 'GenericApi.Controllers.ProductController.Post (GenericApi)'
+2023-10-21 17:12:30.373 -04:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-10-21 17:12:30.437 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-10-21 17:12:30.440 -04:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-10-21 17:12:30.442 -04:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-10-21 17:12:30.442 -04:00 [DBG] Connection id "0HMUIF9KHQT6G" completed keep alive response.
+2023-10-21 17:12:30.442 -04:00 [INF] Request finished HTTP/1.1 POST https://localhost:7180/Product application/json 49 - 401 0 - 80.7072ms
+2023-10-21 17:12:30.443 -04:00 [DBG] Connection id "0HMUIF9KHQT6G", Request id "0HMUIF9KHQT6G:00000003": started reading request body.
+2023-10-21 17:12:30.443 -04:00 [DBG] Connection id "0HMUIF9KHQT6G", Request id "0HMUIF9KHQT6G:00000003": done reading request body.
+2023-10-21 17:12:36.762 -04:00 [INF] Request starting HTTP/1.1 POST https://localhost:7180/api/Authentication/authenticate application/json 50
+2023-10-21 17:12:36.763 -04:00 [DBG] 1 candidate(s) found for the request path '/api/Authentication/authenticate'
+2023-10-21 17:12:36.763 -04:00 [DBG] Endpoint 'GenericApi.Controllers.AuthenticationController.Login (GenericApi)' with route pattern 'api/Authentication/authenticate' is valid for the request path '/api/Authentication/authenticate'
+2023-10-21 17:12:36.763 -04:00 [DBG] Request matched endpoint 'GenericApi.Controllers.AuthenticationController.Login (GenericApi)'
+2023-10-21 17:12:36.763 -04:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-10-21 17:12:36.767 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-10-21 17:12:36.769 -04:00 [INF] Executing endpoint 'GenericApi.Controllers.AuthenticationController.Login (GenericApi)'
+2023-10-21 17:12:36.791 -04:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(Application.Dtos.LoginViewModel) on controller GenericApi.Controllers.AuthenticationController (GenericApi).
+2023-10-21 17:12:36.792 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-10-21 17:12:36.793 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-10-21 17:12:36.793 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-10-21 17:12:36.793 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-10-21 17:12:36.793 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-10-21 17:12:36.795 -04:00 [DBG] Executing controller factory for controller GenericApi.Controllers.AuthenticationController (GenericApi)
+2023-10-21 17:12:36.795 -04:00 [DBG] Executed controller factory for controller GenericApi.Controllers.AuthenticationController (GenericApi)
+2023-10-21 17:12:36.799 -04:00 [DBG] Attempting to bind parameter 'user' of type 'Application.Dtos.LoginViewModel' ...
+2023-10-21 17:12:36.801 -04:00 [DBG] Attempting to bind parameter 'user' of type 'Application.Dtos.LoginViewModel' using the name '' in request data ...
+2023-10-21 17:12:36.802 -04:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2023-10-21 17:12:36.808 -04:00 [DBG] Connection id "0HMUIF9KHQT6G", Request id "0HMUIF9KHQT6G:00000004": started reading request body.
+2023-10-21 17:12:36.808 -04:00 [DBG] Connection id "0HMUIF9KHQT6G", Request id "0HMUIF9KHQT6G:00000004": done reading request body.
+2023-10-21 17:12:36.812 -04:00 [DBG] JSON input formatter succeeded, deserializing to type 'Application.Dtos.LoginViewModel'
+2023-10-21 17:12:36.812 -04:00 [DBG] Done attempting to bind parameter 'user' of type 'Application.Dtos.LoginViewModel'.
+2023-10-21 17:12:36.812 -04:00 [DBG] Done attempting to bind parameter 'user' of type 'Application.Dtos.LoginViewModel'.
+2023-10-21 17:12:36.812 -04:00 [DBG] Attempting to validate the bound parameter 'user' of type 'Application.Dtos.LoginViewModel' ...
+2023-10-21 17:12:36.819 -04:00 [DBG] Done attempting to validate the bound parameter 'user' of type 'Application.Dtos.LoginViewModel'.
+2023-10-21 17:12:36.821 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2023-10-21 17:12:36.822 -04:00 [DBG] No information found on request to perform content negotiation.
+2023-10-21 17:12:36.823 -04:00 [DBG] Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'.
+2023-10-21 17:12:36.823 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2023-10-21 17:12:36.823 -04:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2023-10-21 17:12:36.827 -04:00 [INF] Executed action GenericApi.Controllers.AuthenticationController.Login (GenericApi) in 31.9653ms
+2023-10-21 17:12:36.828 -04:00 [INF] Executed endpoint 'GenericApi.Controllers.AuthenticationController.Login (GenericApi)'
+2023-10-21 17:12:36.828 -04:00 [DBG] Connection id "0HMUIF9KHQT6G" completed keep alive response.
+2023-10-21 17:12:36.828 -04:00 [INF] Request finished HTTP/1.1 POST https://localhost:7180/api/Authentication/authenticate application/json 50 - 401 - application/problem+json;+charset=utf-8 66.4320ms
+2023-10-21 17:12:43.893 -04:00 [INF] Request starting HTTP/1.1 POST https://localhost:7180/api/Authentication/authenticate application/json 46
+2023-10-21 17:12:43.894 -04:00 [DBG] 1 candidate(s) found for the request path '/api/Authentication/authenticate'
+2023-10-21 17:12:43.894 -04:00 [DBG] Endpoint 'GenericApi.Controllers.AuthenticationController.Login (GenericApi)' with route pattern 'api/Authentication/authenticate' is valid for the request path '/api/Authentication/authenticate'
+2023-10-21 17:12:43.894 -04:00 [DBG] Request matched endpoint 'GenericApi.Controllers.AuthenticationController.Login (GenericApi)'
+2023-10-21 17:12:43.894 -04:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-10-21 17:12:43.895 -04:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-10-21 17:12:43.895 -04:00 [INF] Executing endpoint 'GenericApi.Controllers.AuthenticationController.Login (GenericApi)'
+2023-10-21 17:12:43.896 -04:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(Application.Dtos.LoginViewModel) on controller GenericApi.Controllers.AuthenticationController (GenericApi).
+2023-10-21 17:12:43.896 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-10-21 17:12:43.896 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-10-21 17:12:43.896 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-10-21 17:12:43.896 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-10-21 17:12:43.896 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-10-21 17:12:43.896 -04:00 [DBG] Executing controller factory for controller GenericApi.Controllers.AuthenticationController (GenericApi)
+2023-10-21 17:12:43.897 -04:00 [DBG] Executed controller factory for controller GenericApi.Controllers.AuthenticationController (GenericApi)
+2023-10-21 17:12:43.897 -04:00 [DBG] Attempting to bind parameter 'user' of type 'Application.Dtos.LoginViewModel' ...
+2023-10-21 17:12:43.897 -04:00 [DBG] Attempting to bind parameter 'user' of type 'Application.Dtos.LoginViewModel' using the name '' in request data ...
+2023-10-21 17:12:43.898 -04:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2023-10-21 17:12:43.898 -04:00 [DBG] Connection id "0HMUIF9KHQT6G", Request id "0HMUIF9KHQT6G:00000005": started reading request body.
+2023-10-21 17:12:43.898 -04:00 [DBG] Connection id "0HMUIF9KHQT6G", Request id "0HMUIF9KHQT6G:00000005": done reading request body.
+2023-10-21 17:12:43.898 -04:00 [DBG] JSON input formatter succeeded, deserializing to type 'Application.Dtos.LoginViewModel'
+2023-10-21 17:12:43.898 -04:00 [DBG] Done attempting to bind parameter 'user' of type 'Application.Dtos.LoginViewModel'.
+2023-10-21 17:12:43.898 -04:00 [DBG] Done attempting to bind parameter 'user' of type 'Application.Dtos.LoginViewModel'.
+2023-10-21 17:12:43.898 -04:00 [DBG] Attempting to validate the bound parameter 'user' of type 'Application.Dtos.LoginViewModel' ...
+2023-10-21 17:12:43.898 -04:00 [DBG] Done attempting to validate the bound parameter 'user' of type 'Application.Dtos.LoginViewModel'.
+2023-10-21 17:12:43.933 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2023-10-21 17:12:43.933 -04:00 [DBG] No information found on request to perform content negotiation.
+2023-10-21 17:12:43.933 -04:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-10-21 17:12:43.933 -04:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-10-21 17:12:43.933 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-10-21 17:12:43.933 -04:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-10-21 17:12:43.935 -04:00 [INF] Executed action GenericApi.Controllers.AuthenticationController.Login (GenericApi) in 38.5532ms
+2023-10-21 17:12:43.935 -04:00 [INF] Executed endpoint 'GenericApi.Controllers.AuthenticationController.Login (GenericApi)'
+2023-10-21 17:12:43.935 -04:00 [DBG] Connection id "0HMUIF9KHQT6G" completed keep alive response.
+2023-10-21 17:12:43.935 -04:00 [INF] Request finished HTTP/1.1 POST https://localhost:7180/api/Authentication/authenticate application/json 46 - 200 - application/json;+charset=utf-8 41.5474ms
+2023-10-21 17:12:49.079 -04:00 [DBG] Connection id "0HMUIF9KHQT6G" received FIN.
+2023-10-21 17:12:49.081 -04:00 [DBG] Connection id "0HMUIF9KHQT6G" disconnecting.
+2023-10-21 17:12:49.085 -04:00 [DBG] Connection id "0HMUIF9KHQT6G" stopped.
+2023-10-21 17:12:49.089 -04:00 [DBG] Connection id "0HMUIF9KHQT6G" sending FIN because: "The Socket transport's send loop completed gracefully."

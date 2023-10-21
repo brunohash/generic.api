@@ -1,5 +1,5 @@
 ﻿using Application.Commands;
-using Domain.Dtos;
+using Application.Dtos;
 using Domain.Services;
 using MediatR;
 
