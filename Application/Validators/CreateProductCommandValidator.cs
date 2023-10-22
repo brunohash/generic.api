@@ -12,7 +12,7 @@ namespace Application.Validators
                 .MinimumLength(3).WithMessage("O campo 'name' não pode ter menos de 3 caracteres.");
 
             RuleFor(command => command.Description)
-                .MaximumLength(2).WithMessage("O campo 'description' não pode ter mais de 200 caracteres.");
+                .MaximumLength(200).WithMessage("O campo 'description' não pode ter mais de 200 caracteres.");
         }
     }
 }

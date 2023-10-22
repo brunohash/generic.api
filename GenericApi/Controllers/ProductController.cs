@@ -7,12 +7,12 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace GenericApi.Controllers;
 
+[Route("v1/[controller]")]
 [ApiController]
-[Route("[controller]")]
 public class ProductController : ControllerBase
 {
-    [Authorize]
-    [HttpPost(Name = "createProducts")]
+    [Authorize(Roles = "generic")]
+    [HttpPost]
     public async Task<IActionResult> Post([FromBody] CreateProductCommand command, [FromServices] IMediator _mediator)
     {
         try

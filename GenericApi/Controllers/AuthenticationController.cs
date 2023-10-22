@@ -1,34 +1,32 @@
-﻿using Application.Factory;
-using Application.Dtos;
+﻿using Application.Handlers;
+using Domain.Entity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace GenericApi.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("v1/[controller]")]
     [ApiController]
     public class AuthenticationController : ControllerBase
     {
-        private readonly IConfiguration _config;
-        private readonly JwtFactory _jwtFactory; // Injete a fábrica de tokens JWT
+        private readonly JwtHandler _jwtHandler;
 
-        public AuthenticationController(IConfiguration configuration, JwtFactory jwtFactory)
+        public AuthenticationController(JwtHandler jwtHandler)
         {
-            _config = configuration;
-            _jwtFactory = jwtFactory;
+            _jwtHandler = jwtHandler;
         }
 
-        [HttpPost, Route("authenticate")]
-        public IActionResult Login([FromBody] LoginViewModel user)
+        [HttpPost]
+        public IActionResult Login([FromBody] UserAuth user)
         {
             if (user == null)
             {
                 return BadRequest("Requisição inválida.");
             }
-            if (user.UserName == "root" && user.Password == "root")
+            if (user.Username == "root" && user.Password == "root")
             {
-                var token = _jwtFactory.GenerateToken(user.UserName);
+                var token = _jwtHandler.GenerateToken(user.Username);
 
-                return Ok(new { Token = token });
+                return Ok(token);
             }
             else
             {

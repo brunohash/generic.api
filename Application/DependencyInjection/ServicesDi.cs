@@ -1,5 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using Domain.Services;
+using Domain.Business;
+using Application.Handlers;
 
 namespace Application.DependencyInjection
 {
@@ -7,7 +8,8 @@ namespace Application.DependencyInjection
     {
         public static void ConfigureServices(IServiceCollection services)
         {
-            services.AddScoped<ProductServices>();
+            services.AddScoped<ProductBusiness>();
+            services.AddScoped<JwtHandler>();
         }
     }
 }

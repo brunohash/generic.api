@@ -16,21 +16,19 @@
     <PackageReference Include="FluentValidation" Version="11.8.0" />
   </ItemGroup>
   <ItemGroup>
-    <None Remove="DependencyInjection\" />
     <None Remove="Commands\" />
     <None Remove="Handlers\" />
     <None Remove="Validators\" />
     <None Remove="Behaviors\" />
-    <None Remove="Factory\" />
     <None Remove="Dtos\" />
+    <None Remove="DependencyInjection\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="DependencyInjection\" />
     <Folder Include="Commands\" />
     <Folder Include="Handlers\" />
     <Folder Include="Validators\" />
     <Folder Include="Behaviors\" />
-    <Folder Include="Factory\" />
     <Folder Include="Dtos\" />
+    <Folder Include="DependencyInjection\" />
   </ItemGroup>
 </Project>

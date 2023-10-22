@@ -1,17 +1,17 @@
 ﻿using Application.Commands;
 using Application.Dtos;
-using Domain.Services;
+using Domain.Business;
 using MediatR;
 
 namespace Application.Handlers
 {
     public class ProductHandler : IRequestHandler<CreateProductCommand, ProductDto> 
     {
-        private readonly ProductServices _productServices;
+        private readonly ProductBusiness _productBusiness;
 
-        public ProductHandler(ProductServices productServices)
+        public ProductHandler(ProductBusiness productBusiness)
         {
-            _productServices = productServices;
+            _productBusiness = productBusiness;
         }
 
         public Task<ProductDto> Handle(CreateProductCommand request, CancellationToken cancellationToken)
@@ -19,7 +19,7 @@ namespace Application.Handlers
             var result = new ProductDto
             {
                 Id = Guid.NewGuid(),
-                Name = _productServices.NameFormat(request.Name),
+                Name = _productBusiness.NameFormat(request.Name),
                 Description = request.Description
             };
 
